@@ -24,6 +24,7 @@ requirements:
     - flask >=1.1.1
     - importlib-resources >=3.2.0
     - python
+    - numpy
   run_constrained:
     - dwave-inspectorapp ==0.2.4
 
