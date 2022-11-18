@@ -10,3 +10,5 @@ provider:
 test: native_and_emulated
 bot:
   inspection: update-grayskull
+conda_build:
+  pkg_format: '2'
