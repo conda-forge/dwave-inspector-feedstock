@@ -1,5 +1,5 @@
 {% set name = "dwave-inspector" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-inspector-{{ version }}.tar.gz
-  sha256: 6012ee4c75308212d4c0006a414b5fcebd2de752397f2c7a85581e18140ca318
+  sha256: a03af28656a48dfc1e1ccf90d10b9d192acd462f71e7613324520c83ae76d45f
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
@@ -19,10 +19,11 @@ requirements:
     - pip
     - python >=3.6
   run:
-    - dimod >=0.8.17
+    - importlib-metadata >=4.8
+    - dimod >=0.10.0
     - dwave-cloud-client >=0.8.3
     - dwave-system >=1.3.0
-    - flask >=1.1.1
+    - flask >=2.2
     - importlib-resources >=3.2.0
     - python >=3.6
     - numpy
