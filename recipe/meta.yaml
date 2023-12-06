@@ -1,5 +1,5 @@
 {% set name = "dwave-inspector" %}
-{% set version = "0.4.3" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dwave-inspector-{{ version }}.tar.gz
-  sha256: 33ced7259f1fcee6f499908f5ba35f300dce9db9bf392cf2d2439768b8c640a4
+  sha256: ccdf2707971042c1bc7be452312287caefc7f4f21db41524c10fc5ad87703202
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
