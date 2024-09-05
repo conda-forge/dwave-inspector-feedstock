@@ -29,7 +29,7 @@ requirements:
     - numpy
     # Below python 3.10
     - importlib-resources >=3.2.0
-    - importlib-metadata>=4.8
+    - importlib-metadata >=4.8
   run_constrained:
     - dwave-inspectorapp ==0.3.3
 
